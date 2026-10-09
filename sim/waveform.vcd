@@ -1,0 +1,216 @@
+$date
+	Fri Oct 09 20:01:09 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_axi4_lite_interconnect $end
+$var wire 1 ! s1_rready $end
+$var wire 1 " s0_rready $end
+$var wire 1 # m1_rvalid $end
+$var wire 32 $ m1_rdata [31:0] $end
+$var wire 1 % m1_arready $end
+$var wire 1 & m0_rvalid $end
+$var wire 32 ' m0_rdata [31:0] $end
+$var wire 1 ( m0_arready $end
+$var reg 1 ) clk $end
+$var reg 32 * m0_araddr [31:0] $end
+$var reg 1 + m0_arvalid $end
+$var reg 1 , m0_rready $end
+$var reg 32 - m1_araddr [31:0] $end
+$var reg 1 . m1_arvalid $end
+$var reg 1 / m1_rready $end
+$var reg 1 0 rst_n $end
+$var reg 1 1 s0_arready $end
+$var reg 32 2 s0_rdata [31:0] $end
+$var reg 1 3 s0_rvalid $end
+$var reg 1 4 s1_arready $end
+$var reg 32 5 s1_rdata [31:0] $end
+$var reg 1 6 s1_rvalid $end
+$scope module dut $end
+$var wire 1 ) clk $end
+$var wire 32 7 m0_araddr [31:0] $end
+$var wire 1 + m0_arvalid $end
+$var wire 1 , m0_rready $end
+$var wire 32 8 m1_araddr [31:0] $end
+$var wire 1 . m1_arvalid $end
+$var wire 1 / m1_rready $end
+$var wire 1 0 rst_n $end
+$var wire 1 1 s0_arready $end
+$var wire 32 9 s0_rdata [31:0] $end
+$var wire 1 3 s0_rvalid $end
+$var wire 1 4 s1_arready $end
+$var wire 32 : s1_rdata [31:0] $end
+$var wire 1 6 s1_rvalid $end
+$var wire 1 ; read_grant $end
+$var wire 2 < m1_sel [1:0] $end
+$var wire 2 = m0_sel [1:0] $end
+$var parameter 32 > ADDR_WIDTH $end
+$var parameter 32 ? DATA_WIDTH $end
+$var reg 1 ( m0_arready $end
+$var reg 32 @ m0_rdata [31:0] $end
+$var reg 1 & m0_rvalid $end
+$var reg 1 % m1_arready $end
+$var reg 32 A m1_rdata [31:0] $end
+$var reg 1 # m1_rvalid $end
+$var reg 32 B s0_araddr [31:0] $end
+$var reg 1 C s0_arvalid $end
+$var reg 1 " s0_rready $end
+$var reg 32 D s1_araddr [31:0] $end
+$var reg 1 E s1_arvalid $end
+$var reg 1 ! s1_rready $end
+$scope module dec0 $end
+$var wire 32 F addr [31:0] $end
+$var wire 2 G slave_sel [1:0] $end
+$var parameter 32 H ADDR_WIDTH $end
+$upscope $end
+$scope module dec1 $end
+$var wire 32 I addr [31:0] $end
+$var wire 2 J slave_sel [1:0] $end
+$var parameter 32 K ADDR_WIDTH $end
+$upscope $end
+$scope module r_arb $end
+$var wire 1 ) clk $end
+$var wire 1 + req0 $end
+$var wire 1 . req1 $end
+$var wire 1 0 rst_n $end
+$var reg 1 ; grant $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b100000 K
+b100000 H
+b100000 ?
+b100000 >
+$end
+#0
+$dumpvars
+bx J
+bx I
+bx G
+bx F
+0E
+bx D
+0C
+b0 B
+b0 A
+b10111011101110111011101110111011 @
+bx =
+bx <
+0;
+b10111011101110111011101110111011 :
+b10101010101010101010101010101010 9
+bx 8
+bx 7
+16
+b10111011101110111011101110111011 5
+14
+13
+b10101010101010101010101010101010 2
+11
+00
+1/
+0.
+bx -
+1,
+0+
+bx *
+0)
+1(
+b10111011101110111011101110111011 '
+1&
+0%
+b0 $
+0#
+0"
+1!
+$end
+#5000
+1)
+#10000
+0)
+#15000
+1)
+10
+#20000
+0)
+#25000
+1"
+1C
+b10000000000000000000000000000 B
+b1 =
+b1 G
+0E
+0!
+b0 D
+1&
+b10101010101010101010101010101010 '
+b10101010101010101010101010101010 @
+1(
+1)
+1+
+b10000000000000000000000000000 *
+b10000000000000000000000000000 7
+b10000000000000000000000000000 F
+#30000
+0)
+#35000
+1"
+b10000000000000000000000000000 B
+0C
+1&
+b10101010101010101010101010101010 '
+b10101010101010101010101010101010 @
+1(
+1)
+0+
+#40000
+0)
+#45000
+1!
+1#
+b10111011101110111011101110111011 $
+b10111011101110111011101110111011 A
+1%
+1E
+b10010000000000000000000000000000 D
+1;
+b10 <
+b10 J
+0"
+b0 B
+0&
+b0 '
+b0 @
+0(
+1)
+1.
+b10010000000000000000000000000000 -
+b10010000000000000000000000000000 8
+b10010000000000000000000000000000 I
+#50000
+0)
+#55000
+1!
+b10010000000000000000000000000000 D
+0E
+1#
+b10111011101110111011101110111011 $
+b10111011101110111011101110111011 A
+1%
+1)
+0.
+#60000
+0)
+#65000
+1)
+#70000
+0)
+#75000
+1)
